@@ -87,7 +87,3 @@ def earclip(polygon):
                 elif p in ear_vertex:
                     ear_vertex.remove(p)
     return triangles
-
-polygon = [(1,0), (1,2), (2,2), (2,3), (1,3), (3, 4), (3, 2), (6, 2), (6, 1), (5, 1), (5, 0), (3, 0), (2, -1), (2, 0)]
-triangles = earclip(polygon)
-print(triangles)
