@@ -1,9 +1,11 @@
-from triangulatePolygon import *
+from triangulate_polygon import *
 from tricoloring import *
 
 
 # Cartesian coordinates for the vertices of a CLOSED polygon, in either clockwise or counter-clockwise order
 polygon = [(1,0), (2,0), (2,2), (3,3), (0, 3), (1, 1)] # n = 6
+#polygon = [(4,0), (2,2), (2,6), (4, 4), (6,6), (6,8), (8,4), (4,2), (6,0)] # n = 9
+#polygon = [(2,2), (2,6), (4, 4), (6,6), (6,8), (8,4), (4,2), (6,0)] # n = 8
 print(polygon) # the input
 
 # Triangulate the polygon
@@ -65,7 +67,7 @@ chosen_vertices = []
 for i in colored_vertices.keys():
     if colored_vertices[i] == [least_frequent_color]: 
         chosen_vertices.append(i)
-
+print(num_vertices)
 print(chosen_vertices) # the output
 
 
